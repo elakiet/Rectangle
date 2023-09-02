@@ -2,13 +2,13 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Rectangle rectangle1=new Rectangle(2,3);
-        Rectangle rectangle2=new Rectangle(4,5);
+        Rectangle rectangle2x3=new Rectangle(2,3);
+        Rectangle rectangle4x5=new Rectangle(4,5);
 
-        System.out.println("Area of Rectangle1 :"+rectangle1.RectangleArea());
-        System.out.println("Circumference of Rectangle1 :" +rectangle1.RectangleCircumference());
-        System.out.println("Area of Rectangle2 :" +rectangle2.RectangleArea());
-        System.out.println("Circumference of Rectangle2 :" +rectangle2.RectangleCircumference());
+        System.out.println("Area of Rectangle1 :"+rectangle2x3.calculateArea());
+        System.out.println("Circumference of Rectangle1 :" +rectangle2x3.calculatePerimeter());
+        System.out.println("Area of Rectangle2 :" +rectangle4x5.calculateArea());
+        System.out.println("Circumference of Rectangle2 :" +rectangle4x5.calculatePerimeter());
 
     }
 }
@@ -18,11 +18,11 @@ class Rectangle{
         this.Length=Length;
         this.Breadth=Breadth;
     }
-    double RectangleArea(){
+    double calculateArea(){
         return Length*Breadth;
     }
 
-    double RectangleCircumference(){
+    double calculatePerimeter(){
         return 2*(Length+Breadth);
     }
 }
